@@ -19,7 +19,7 @@ Switch.Draw = function()
 			function()
 				local weapon = localPlayer:getWeapon()
 				local clip = localPlayer:getAmmoInClip()
-		        local ammo = localPlayer:getTotalAmmo()
+		        	local ammo = localPlayer:getTotalAmmo()
 				dxDrawImage(screen.x/2-50, screen.y/6, 95, 95, "components/weapon/"..weapon..".png")
 				dxDrawRoundedRectangle(screen.x/2-47, screen.y/6+92, 90, 25, tocolor(0,0,0,225))
 				if (weapon >= 15 and weapon ~= 40 and weapon <= 44 or weapon >= 46) then
